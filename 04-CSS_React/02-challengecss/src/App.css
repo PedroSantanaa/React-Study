@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  background-color: #61dafb;
+  margin: 0;
+  padding: 5px;
+}
+
+.carsDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
