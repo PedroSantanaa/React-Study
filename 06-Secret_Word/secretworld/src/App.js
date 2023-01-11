@@ -14,15 +14,29 @@ const stages = [
   { id: 2, name: "game" },
   { id: 3, name: "end" },
 ];
+
 function App() {
   const [gameStage, setGameStage] = useState(stages[0].name);
   const words = useState(wordsList);
-  console.log(words);
+
+  //start the game
+  const startGame = () => {
+    setGameStage(stages[1].name);
+  };
+
+  //process letter input
+  const verifyLetter = () => {
+    setGameStage(stages[2].name);
+  };
+  //Restart game
+  const restartGame = () => {
+    setGameStage(stages[0].name);
+  };
   return (
     <div className="App">
-      {gameStage === "start" && <StartScreen />}
-      {gameStage === "game" && <GameScreen />}
-      {gameStage === "end" && <EndScreen />}
+      {gameStage === "start" && <StartScreen startGame={startGame} />}
+      {gameStage === "game" && <GameScreen verifyLetter={verifyLetter} />}
+      {gameStage === "end" && <EndScreen restartGame={restartGame} />}
     </div>
   );
 }
