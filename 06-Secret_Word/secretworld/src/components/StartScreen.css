@@ -1,0 +1,22 @@
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.start h1 {
+  font-size: 5em;
+  font-family: Impact, Charcoal, sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #fffafb;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: normal;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5,
+    -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
+    -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 2px 2px rgba(206, 89, 55, 0);
+}

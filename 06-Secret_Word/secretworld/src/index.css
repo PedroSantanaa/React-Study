@@ -1,0 +1,37 @@
+html,
+body {
+  height: 100vh;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(241, 170, 155);
+  background: linear-gradient(
+    180deg,
+    rgba(241, 170, 155, 1) 0%,
+    rgba(238, 133, 55, 1) 28%,
+    rgba(242, 126, 14, 1) 52%,
+    rgba(249, 117, 13, 1) 73%,
+    rgba(196, 57, 5, 1) 100%
+  );
+  color: #fff;
+}
+
+button {
+  background-color: #1646a0;
+  color: #fff;
+  padding: 0 45px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: #0923af;
+  border-color: aquamarine;
+}
