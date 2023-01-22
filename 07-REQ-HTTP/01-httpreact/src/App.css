@@ -52,3 +52,7 @@ form input {
   flex-direction: column;
   margin-bottom: 15px;
 }
+
+button {
+  margin-left: 15px;
+}
