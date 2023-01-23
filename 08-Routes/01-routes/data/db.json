@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "name": "isabela",
+      "price": "12",
+      "id": 1
+    },
+    {
+      "name": "cadeira",
+      "price": "600",
+      "id": 2
+    },
+    {
+      "name": "reforma",
+      "price": "600",
+      "id": 3
+    }
+  ]
+}
