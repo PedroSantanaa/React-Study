@@ -1,0 +1,26 @@
+.active {
+  border: 4px solid green;
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: left;
+  flex: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+nav a {
+  margin: 0 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  background-color: rgb(4, 159, 4);
+  border-radius: 5px;
+}
