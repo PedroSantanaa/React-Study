@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35%;
+  background-color: #777;
+}
+.todoImg {
+  width: 100px;
+}
+
+.titleHeader {
+  color: aqua;
+  letter-spacing: 2px;
+}

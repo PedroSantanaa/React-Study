@@ -1,0 +1,28 @@
+.footer {
+  background-color: #777;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.icons a {
+  width: 50px;
+}
+.titleFooter {
+  color: aqua;
+  letter-spacing: 2px;
+}
+.subtitle {
+  color: white;
+  letter-spacing: 2px;
+}
