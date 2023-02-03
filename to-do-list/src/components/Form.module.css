@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form input {
+  width: 350px;
+  height: 40px;
+  padding: 8px 15px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.form div label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  font-weight: bold;
+  gap: 10px;
+  margin-bottom: 0.4em;
+}
+.form input[type="submit"] {
+  background-color: rgb(73, 213, 9);
+  color: white;
+  border: 2px solid rgb(73, 213, 9);
+  font-weight: bold;
+  font-size: 17px;
+  transform: 0.5s;
+  cursor: pointer;
+}
+.form input[type="submit"]:hover {
+  background-color: rgb(33, 100, 1);
+  border-color: rgb(33, 100, 1);
+}

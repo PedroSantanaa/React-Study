@@ -1,15 +1,17 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 35%;
   background-color: #777;
-}
-.todoImg {
-  width: 100px;
 }
 
 .titleHeader {
   color: aqua;
   letter-spacing: 2px;
+  margin-top: 25px;
+  text-decoration: underline rgb(62, 241, 62);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 20px;
 }
