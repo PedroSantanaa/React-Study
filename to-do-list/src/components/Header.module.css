@@ -4,11 +4,11 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 35%;
-  background-color: #777;
+  background-color: #eee9da;
 }
 
 .titleHeader {
-  color: aqua;
+  color: black;
   letter-spacing: 2px;
   margin-top: 25px;
   text-decoration: underline rgb(62, 241, 62);

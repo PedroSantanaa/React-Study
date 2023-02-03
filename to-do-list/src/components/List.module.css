@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   width: clamp(350px, 50%, 500px);
-  background-color: #999;
-  border: 2px solid #999;
+  background-color: #bdcdd6;
+  border: 2px solid #bdcdd6;
   margin-left: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -12,8 +12,8 @@
 }
 
 .task:hover {
-  background-color: #666;
-  border-color: #666;
+  background-color: #93bfcf;
+  border-color: #93bfcf;
 }
 
 .details {
@@ -33,7 +33,7 @@
   margin-bottom: 0.5em;
   font-size: 0.7em;
   cursor: pointer;
-  background-color: #282c34;
+  background-color: black;
   color: white;
   padding: 0.4em;
   transform: 0.5s;
@@ -41,5 +41,5 @@
 }
 
 .actions i:hover {
-  color: #61dafb;
+  color: #6096b4;
 }

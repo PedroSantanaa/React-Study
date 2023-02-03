@@ -1,5 +1,5 @@
 .footer {
-  background-color: #777;
+  background-color: #eee9da;
   height: 200px;
   display: flex;
   flex-wrap: wrap;
@@ -19,10 +19,10 @@
   width: 50px;
 }
 .titleFooter {
-  color: aqua;
+  color: black;
   letter-spacing: 2px;
 }
 .subtitle {
-  color: white;
+  color: #6096b4;
   letter-spacing: 2px;
 }
