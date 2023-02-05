@@ -15,3 +15,15 @@
   text-decoration-thickness: 3px;
   text-underline-offset: 20px;
 }
+
+@media (max-width: 530px) {
+  .titleHeader {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 335px) {
+  .titleHeader {
+    font-size: 35px;
+  }
+}

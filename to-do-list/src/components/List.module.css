@@ -43,3 +43,23 @@
 .actions i:hover {
   color: #6096b4;
 }
+
+@media (max-width: 530px) {
+  .task {
+    width: clamp(250px, 50%, 400px);
+  }
+  .details h4 {
+    font-size: 0.6em;
+  }
+  .actions i {
+    font-size: 0.5em;
+  }
+}
+@media (max-width: 335px) {
+  .details h4 {
+    font-size: 0.5em;
+  }
+  .actions i {
+    font-size: 0.4em;
+  }
+}

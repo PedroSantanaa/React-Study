@@ -26,3 +26,33 @@
   color: #6096b4;
   letter-spacing: 2px;
 }
+
+@media (max-width: 530px) {
+  .footer {
+    height: 150px;
+  }
+  .titleFooter {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .icons a {
+    width: 30px;
+  }
+}
+
+@media (max-width: 335px) {
+  .footer {
+    height: 130px;
+  }
+  .titleFooter {
+    font-size: 35px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  .icons a {
+    width: 25px;
+  }
+}

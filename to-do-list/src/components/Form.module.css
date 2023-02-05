@@ -39,3 +39,17 @@
   background-color: #6096b4;
   border-color: #6096b4;
 }
+
+@media (max-width: 530px) {
+  .form input {
+    width: 250px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 335px) {
+  .form input {
+    width: 200px;
+    height: 40px;
+  }
+}

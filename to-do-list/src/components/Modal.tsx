@@ -9,11 +9,11 @@ const Modal = ({ children }: Props) => {
     const modal = document.querySelector("#modal");
     modal!.classList.add("hide");
   };
-  return ( 
+  return (
     <div id="modal" className="hide">
       <div className={styles.fade} onClick={closeModal}></div>
       <div className={styles.modal}>
-        <h2>texto modal</h2>
+        <h2>Edit Task</h2>
         {children}
       </div>
     </div>
