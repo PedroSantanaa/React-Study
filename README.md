@@ -14,7 +14,7 @@ A Secret Word Game:
 
 Second Project:
 
-Todo List
+Todo List:
 [Todo List Link](https://todo-list-ps.vercel.app)
 
 ![image](https://user-images.githubusercontent.com/62779635/216797224-1c70b776-c21b-4e25-8cb2-e49aeaf87212.png)
