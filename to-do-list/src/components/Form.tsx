@@ -6,25 +6,39 @@ interface Props {
   btnText: string;
   taskList: ITask[];
   setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>;
+  task?: ITask | null;
+  handleUpdate?(id: number, title: string, difficulty: number): void;
 }
-const Form = ({ btnText, taskList, setTaskList }: Props) => {
+const Form = ({ btnText, taskList, setTaskList, task, handleUpdate }: Props) => {
   //states
   const [id, setId] = useState<number>(0);
   const [title, setTitle] = useState<string>("");
   const [difficulty, setDifficulty] = useState<number>(0);
 
+  useEffect(() => {
+    if (task) {
+      setId(task.id);
+      setTitle(task.title);
+      setDifficulty(task.difficulty);
+    } else {
+    }
+  }, [task]);
+
   //handle functions
 
-  const addTaskHandle = (ev: FormEvent<HTMLFormElement>) => {
+  const taskHandle = (ev: FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
-    //Id to edit or delete
-    const id = Math.floor(Math.random() * 1000);
-    const newTask: ITask = { id, title, difficulty };
-    setTaskList!([...taskList, newTask]);
+    if (handleUpdate) {
+      handleUpdate(id, title, difficulty);
+    } else {
+      //Id to edit or delete
+      const id = Math.floor(Math.random() * 1000);
+      const newTask: ITask = { id, title, difficulty };
+      setTaskList!([...taskList, newTask]);
 
-    setTitle("");
-    setDifficulty(0);
-    console.log(taskList);
+      setTitle("");
+      setDifficulty(0);
+    }
   };
   const handleChange = (ev: ChangeEvent<HTMLInputElement>) => {
     if (ev.target.name === "title") {
@@ -34,7 +48,7 @@ const Form = ({ btnText, taskList, setTaskList }: Props) => {
     }
   };
   return (
-    <form onSubmit={addTaskHandle} className={styles.form}>
+    <form onSubmit={taskHandle} className={styles.form}>
       <div>
         <label>
           <input
@@ -43,6 +57,7 @@ const Form = ({ btnText, taskList, setTaskList }: Props) => {
             placeholder="Add a new task"
             onChange={handleChange}
             value={title}
+            required
           />
         </label>
       </div>
