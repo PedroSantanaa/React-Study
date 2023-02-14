@@ -48,8 +48,38 @@ export const useAutentication = () => {
       setError(errorMessage);
     }
   };
+
+  //logout
+  const logout = () => {
+    checkIfIsCancelled();
+    signOut(auth);
+  };
+
+  //login
+  const login = async (data) => {
+    checkIfIsCancelled();
+    setLoading(true);
+    setError(false);
+
+    try {
+      await signInWithEmailAndPassword(auth, data.email, data.password);
+      setLoading(false);
+    } catch (error) {
+      let errorMessage;
+      if (error.message.includes("user-not-found")) {
+        errorMessage = "User Not Exists";
+      } else if (error.message.includes("wrong-password")) {
+        errorMessage = "Wrong Password";
+      } else {
+        errorMessage = "Something wrong occurred";
+      }
+      setLoading(false);
+      setError(errorMessage);
+    }
+  };
+
   useEffect(() => {
     return () => setCancelled(true);
   }, []);
-  return { auth, createUser, error, loading };
+  return { auth, createUser, error, loading, logout, login };
 };
