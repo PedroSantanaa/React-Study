@@ -9,7 +9,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
+  const [success, setSuccess] = useState(null);
 
   const { createUser, error: authError, loading } = useAutentication();
 
@@ -29,7 +29,9 @@ const Register = () => {
       return;
     }
     const res = await createUser(user);
-    setSuccess("Account created with success");
+    if (res) {
+      setSuccess("Account created with success");
+    }
   };
 
   useEffect(() => {
