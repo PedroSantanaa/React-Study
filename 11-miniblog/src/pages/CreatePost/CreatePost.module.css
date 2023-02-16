@@ -1,0 +1,10 @@
+.create {
+  text-align: center;
+}
+.create h2 {
+  font-size: 2.2em;
+}
+.create p {
+  color: #aaa;
+  margin-bottom: 2em;
+}
