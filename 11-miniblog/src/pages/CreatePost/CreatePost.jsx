@@ -43,7 +43,7 @@ const CreatePost = () => {
         createBy: user.displayName,
       });
       // //redirect to homepage
-      // navigate("/");
+      navigate("/");
     }
   };
 
